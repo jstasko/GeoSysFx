@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="insert" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.stasko.controller.realEstate.realEstateInsert.InsertController">
+   <children>
+      <SplitPane dividerPositions="0.2192" layoutX="236.0" layoutY="105.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="309.0" layoutY="41.0" text="Insert Real Estate">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextField fx:id="lengthGps" layoutX="86.0" layoutY="69.0" prefHeight="26.0" prefWidth="109.0" />
+                  <TextField fx:id="lengthGpsPosition" layoutX="319.0" layoutY="69.0" prefHeight="26.0" prefWidth="35.0" />
+                  <TextField fx:id="widthGps" layoutX="85.0" layoutY="111.0" prefHeight="26.0" prefWidth="110.0" />
+                  <TextField fx:id="widthGpsPosition" layoutX="319.0" layoutY="112.0" prefHeight="26.0" prefWidth="35.0" />
+                  <Label layoutX="37.0" layoutY="74.0" text="Length" />
+                  <Label layoutX="37.0" layoutY="117.0" text="Width" />
+                  <Label layoutX="218.0" layoutY="74.0" text="Position of length" />
+                  <Label layoutX="220.0" layoutY="116.0" text="Position of width" />
+                  <Label layoutX="195.0" layoutY="30.0" text="GPS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="568.0" layoutY="30.0" text="Real Estate">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="465.0" layoutY="95.0" text="Catalog number" />
+                  <TextField fx:id="catalogNumberInsert" layoutX="593.0" layoutY="91.0" />
+                  <TextArea fx:id="descriptionInsert" layoutX="465.0" layoutY="163.0" prefHeight="159.0" prefWidth="276.0" />
+                  <Label layoutX="573.0" layoutY="138.0" text="Description" />
+                  <Button fx:id="insertButton" layoutX="152.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#insertRealEstate" prefHeight="45.0" prefWidth="150.0" text="Add Real Estate" />
+                  <Separator layoutX="396.0" layoutY="74.0" orientation="VERTICAL" prefHeight="426.0" prefWidth="17.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

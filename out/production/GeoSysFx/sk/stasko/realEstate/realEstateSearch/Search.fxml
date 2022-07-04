@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.stasko.controller.realEstate.realEstateSearch.SearchController">
+    <children>
+        <SplitPane dividerPositions="0.2192" layoutX="254.0" layoutY="83.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Label layoutX="230.0" layoutY="32.0" text="Real Estate Search">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <SplitPane dividerPositions="0.4331993972877951" layoutX="285.0" layoutY="67.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                    <children>
+                                        <ListView fx:id="realEstateView" layoutX="70.0" layoutY="32.0" prefHeight="350.0" prefWidth="342.0" AnchorPane.bottomAnchor="-22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                    <children>
+                                        <TabPane layoutX="67.0" layoutY="57.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+                                            <tabs>
+                                                <Tab text="FindByPoint">
+                                                    <content>
+                                                        <fx:include fx:id="searchByGps" source="SearchByGps.fxml" />
+                                                    </content>
+                                                </Tab>
+                                                <Tab text="FindByInterval">
+                                                    <content>
+                                                        <fx:include fx:id="searchByInterval" source="SearchByInterval.fxml" />
+                                                    </content>
+                                                </Tab>
+                                            </tabs>
+                                        </TabPane>
+                                        <Button layoutX="145.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#handleClick" text="Edit Selected Real Estate" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

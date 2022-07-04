@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.stasko.controller.realEstate.realEstateEdit.EditController">
+   <children>
+      <SplitPane dividerPositions="0.11496350364963503" layoutX="427.0" layoutY="109.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button onMouseClicked="#onDelete" layoutX="661.0" layoutY="18.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="Delete" />
+                  <Button onMouseClicked="#onEdit" layoutX="559.0" layoutY="19.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="Save" />
+                  <Button onMouseClicked="#onClose" layoutX="75.0" layoutY="18.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="Close" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.501004520341537" layoutX="269.0" layoutY="110.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Label layoutX="112.0" layoutY="14.0" text="Real Estate">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="catalogNumber" layoutX="123.0" layoutY="139.0" />
+                              <TextArea fx:id="description" layoutX="97.0" layoutY="240.0" prefHeight="200.0" prefWidth="200.0" />
+                              <Label layoutX="153.0" layoutY="200.0" text="Description">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <Label layoutX="134.0" layoutY="98.0" text="Catalog number">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Label layoutX="165.0" layoutY="14.0" text="GPS">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="79.0" layoutY="68.0" text="Width" />
+                              <Label layoutX="279.0" layoutY="68.0" text="Length" />
+                              <Label layoutX="57.0" layoutY="140.0" text="WidthPosition" />
+                              <Label layoutX="257.0" layoutY="140.0" text="LengthPosition" />
+                              <TextField fx:id="widthGps" layoutX="21.0" layoutY="93.0" />
+                              <TextField fx:id="lengthGps" layoutX="223.0" layoutY="93.0" />
+                              <TextField fx:id="widthGpsPosition" layoutX="67.0" layoutY="169.0" prefHeight="26.0" prefWidth="47.0" />
+                              <TextField fx:id="lengthGpsPosition" layoutX="273.0" layoutY="169.0" prefHeight="26.0" prefWidth="47.0" />
+                              <Separator layoutY="219.0" prefHeight="10.0" prefWidth="290.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <ListView fx:id="buildingLotListView" layoutX="97.0" layoutY="281.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <Label layoutX="133.0" layoutY="240.0" text="Building Lot List">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

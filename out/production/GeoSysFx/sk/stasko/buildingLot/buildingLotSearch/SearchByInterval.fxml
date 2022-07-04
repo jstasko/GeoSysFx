@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="searchByInterval" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.stasko.controller.buildingLot.buildingLotSearch.SearchByIntervalController">
+    <children>
+        <SplitPane dividerPositions="0.43626062322946174" layoutX="151.0" layoutY="77.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <TextField fx:id="widthLeft" layoutX="50.0" layoutY="87.0" />
+                        <TextField fx:id="widthRight" layoutX="283.0" layoutY="87.0" />
+                        <CheckBox fx:id="widthLeftEqual" layoutX="88.0" layoutY="120.0" mnemonicParsing="false" text="Equal" />
+                        <CheckBox fx:id="widthRightEqual" layoutX="321.0" layoutY="120.0" mnemonicParsing="false" text="Equal" />
+                        <Label fx:id="Left" layoutX="110.0" layoutY="59.0" text="Left" />
+                        <Label layoutX="343.0" layoutY="59.0" text="Right" />
+                        <Label layoutX="183.0" layoutY="23.0" text="Interval for Width" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Button layoutX="182.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#findByInterval" prefHeight="26.0" prefWidth="120.0" text="Find" />
+                        <Label layoutX="182.0" layoutY="22.0" text="Interval for Length" />
+                        <Label layoutX="112.0" layoutY="49.0" text="Left" />
+                        <Label layoutX="350.0" layoutY="49.0" text="Right" />
+                        <TextField fx:id="lengthLeft" layoutX="52.0" layoutY="73.0" />
+                        <TextField fx:id="lengthRight" layoutX="286.0" layoutY="73.0" />
+                        <CheckBox fx:id="lengthLeftEqual" layoutX="90.0" layoutY="109.0" mnemonicParsing="false" text="Equal" />
+                        <CheckBox fx:id="lengthRightEqual" layoutX="324.0" layoutY="109.0" mnemonicParsing="false" text="Equal" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
